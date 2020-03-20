@@ -1,90 +1,131 @@
 <!doctype html>
 <html>
-
     
-    <!---해결하지 못했어요ㅜㅡㅜ
-
-    1. 중앙정렬을 하지 못했어요!
-    2. 주문하기의 작성란까리 왼쪽정렬을 하고싶은데 완수하지 못했습니다ㅜ
-    3. 주문하기 버튼의 폰트색이 파란색으로 고정되어있는 것을 해결하지 못했어요ㅠ
-    
-    -->
-    
-  <head>
+<head>
 		
 		<!-- Webpage Title -->
-    <title>TWIN SQUARE BAG-ivory</title>
+    <title>Bright-room</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
 		
     <!-- JS -->		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
+    <script>
+         function q1() {
+            let txt = $('#input-q1').val();
+            if (txt == '') {
+                alert('성함을 입력해 주세요!');
+            } else {
+                alert(txt);
+            }
+        }
+        function q1() {
+            let txt = $('#input-number').val();
+            if (txt == '') {
+                alert('수량을 입력해 주세요!');
+            } else {
+                alert(txt);
+            }
+        }
+
+        function q1() {
+            let txt = $('#input-ad').val();
+            if (txt == '') {
+                alert('주소를 입력해 주세요!');
+            } else {
+                alert(txt);
+            }
+        }
+
+        function q1() {
+            let txt = $('#input-phone').val();
+            if (txt == '') {
+                alert('전화번호를 입력해 주세요!');
+            } else {
+                alert(txt);
+            }
+        }
+        
+        
+        
+        
+
+    </script>
+    
+    
+    <!--Jquery--->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  
     <!--css-->
     <link rel="stylesheet" href="hw.css" >
-    <style>
-       .body {display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+  
+    
+        
+      
+    <script>
+        function hey() {
+            alert('주문완료');
         }
       
-      
-    </style>
-  </head>
+    </script>
+</head>
   
 
 <body>
-    <div class="img">
-        <img src="./스크린샷 2020-03-07 오후 6.56.05.png" class="img">
+    <div class="wrap">
+        <div class="img">
+            <img src= "https://contents.sixshop.com/thumbnails/uploadedFiles/57180/product/image_1554082192749_1000.jpg" class="img">
+        </div>
+
+
+        <div class="item">
+            <h1><strong>Robin in the pond</strong></h1>
+            </div>
+
+        <div class="price">
+            <p><strong>9,000원</strong>/개</p>
+            </div>
+
+        <div class="information">
+            <h6>연못에 둥둥 떠있는 오리의 모습과 닮은 로빈 수저받침입니다. 
+                길이가 긴 로빈은 수저받침으로 사용할 수 있으며 짧은 로빈은 젓가락이나 다과용 포크를 얹기에 좋습니다. 브라이트룸의 제품은 모든 공정이 수작업으로 만들어집니다.</h6><br>
+        
+               
+                <p>short boy : W4 x D1 c H2 cm/7g</p>
+                <p>long girl : W7 x D1 x H3 cm / 15.5 g</p>
+                <p>재질 : white porcelain</p> 
+                <p>제조 : 브라이트룸 ( bright room )</p>
+        </div>
+    
+
+        <table class="order col-12" >
+            <h6>Order</h6>
+                <tr>
+                    <th><input type="name" placeholder="주문자 성함" class="col-12 name" id="input-name"></th>
+                    
+                    <th><input type="number" placeholder="수량" class="col-12" id="input-number"></th>
+                    
+                    <th><input type="address" placeholder="주소" class="col-12" id="input-ad"></th>
+                    
+                    <th><input type="phone" placeholder="010-0000-0000" class="col-12" id="input-phone"></th>
+                </tr>
+
+
+
+
+        </table>
+
+       <button type="button" class="btn" onclick="q1()">주문하기</button>
+
     </div>
-
-
-    <div class="item">
-        <h1><strong>TWIN SQUARE BAG-ivory</strong></h1>
-        </div>
-
-    <div class="price">
-        <p><strong>200,000원</strong>/개</p>
-        </div>
-
-    <div class="information">
-        <p>미닛뮤트의 시그니처 'twin square bag'입니다. 앞,뒤가 같아 숄더로 사용할 경우 지장이 없지만, 
-        크로스로 사용할 경우 오른쪽으로 하시는 편이 가장 이상적입니다. 이태리 텐더 소가죽과
-        YKK지퍼를 사용하였으며, 안감은 오염에 강한 TC 면을 사용하고 니켈 사틴 가공 처리 된 무광 버클로
-        빈티지함을 더하였습니다.
-        </p>
-        </div>
-
-
-    <table class="order">
-        <h6>주문하기</h6>
-            <tr>
-                <th>주문자 성함<input type="text"></th>
-                <th>수량<input type="number"></th>
-                <th>주소<input type="text"></th>
-                <th>전화번호<input type="text"></th>
-            </tr>
-       
-           
-
-       
-    </table>
-
-    <div class="btn" button type="button">
-        <a href="http://minitmute.com/product/twin-square-bag-ivory/48/category/44/display/1/" target="blank"><strong>주문하기</strong></a>
-    </div>
-
-
 </body>
     
 </html>
